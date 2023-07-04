@@ -13,7 +13,6 @@ function playRound(playerSelection, computerSelection){
     for(let i = 0; i < 2; i++) {
         score[i] = score[i] + 1;
     }
-    console.log(score);
     return "Tie!"
   }
   switch (playerSelection) {

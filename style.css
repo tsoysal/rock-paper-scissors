@@ -19,21 +19,24 @@ body {
     text-align: center;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
     
 }
 
 .btn {
-    flex: 1;
+    flex: 1 0 250px;
     border-radius: 10px;
     cursor: pointer;
-    background-position: bottom;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     border: 5px solid #000000;
-    transition: border ease .2s;
+    transition: border ease .1s;
+    background-color: #26006E;
 }
 
 .btn:hover {
-    border-color: #ffffff;
+    border-color: #6186ff;
 }
 
 .btn.rock {
@@ -46,4 +49,11 @@ body {
 
 .btn.scissors {
     background-image: url("icons/scissors.png")
+}
+
+.display {
+    height: 200px;
+    text-align: center;
+    font-size: 42px;
+    color: white;
 }

@@ -73,7 +73,6 @@ function game(playerSelection) {
 let score = [0, 0];
 const display = document.querySelector('.display')
 const buttons = document.querySelectorAll('.btn');
-buttons.forEach(btn => btn.addEventListener('click', () => game(btn.textContent)))
-
+buttons.forEach(btn => btn.addEventListener('click', () => game(btn.getAttribute('choice'))))
 
  
